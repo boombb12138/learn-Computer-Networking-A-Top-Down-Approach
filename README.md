@@ -2,7 +2,7 @@
 
 > 本文档为创建残酷共学的通用模版 - 中文版，请根据模版结构来进行你的残酷共学的内容填充
 
-# {本期残酷共学标题}
+# {计算机网络}
 
 ## 什么是残酷共学（Intensive Co-learning）？
 
@@ -23,28 +23,53 @@
 
 如果你有任何有关残酷共学的疑问或者想法，请到 [残酷共学 Telegram 群](https://t.me/LXDAO/6215) 联系我们。
 
-## {本期残酷共学名字}介绍
+## {计算机网络：自顶向下方法}介绍
 
 请写清楚本期残酷共学：
 
 - 举办的原因
+- https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md 中列了很多经典的书籍，耗子叔（https://github.com/haoel）在极客时间的课程也提到这些基础书目的重要性；21天的共同学习可以让啃完书不再遥遥无期，而有终点，且每日负担又合适，极佳～
 - 谁/哪个组织发起的，以及合作方
-- 一共几期
+- 一共几期 计算机网络仅有1期
 - 共学形式：自主学习、定期答疑、线上课程 、线下 Meetup (请自由组合或新增新的共学方式)
 - 本次共学目标或产出
-- 适合人群
-- 负责人、助教、导师的简单介绍以及联系方式
+- 适合人群 对计算机网络感兴趣的朋友都可以
 
 ## 共学内容
 
-请写清楚共学内容的链接以及使用方法，如果欢迎新增共学内容，也请说明一下，但请负责人保证共学的内容准确、质量、数量、符合本次共学难度。
+书籍PDF在仓库可看到，本次学习前7章，因为这7章和软件开发联系比较紧密。
 
-如果有提供的具体的课程学习计划，也请在此说明。
+Week 1: Chapter 4 - The Network Layer
+Day 1: Introduction and Forwarding (Section 4.1 - 4.2)
+Day 2: Network Layer Protocols, IPv4, and IPv6 (Section 4.3)
+Day 3: Routing Algorithms: Link-State and Distance Vector (Section 4.4.1 - 4.4.3)
+Day 4: Routing in the Internet: RIP, OSPF, BGP (Section 4.4.4 - 4.4.5)
+Day 5: Broadcast and Multicast Routing (Section 4.5)
+Day 6: Review Chapter 2 - Application Layer
+Day 7: Review Chapter 3 - Transport Layer
+
+Week 2: Chapter 5 - The Link Layer and Local Area Networks
+Day 8: Link Layer Services and Error Detection (Section 5.1 - 5.2)
+Day 9: Multiple Access Links and Protocols (Section 5.3)
+Day 10: LAN Technologies: Ethernet, Switching (Section 5.4)
+Day 11: Link Layer Addressing, ARP, and Switch Forwarding (Section 5.5)
+Day 12: Virtual LANs (VLANs) (Section 5.6)
+Day 13: Study Review and Practice Problems for Chapter 5
+Day 14: Extra Time for Revision/Notes Summary (Focus on Chapters 2, 3, and 5)
+
+Week 3: Chapter 6 - Wireless and Mobile Networks & Chapter 7 - Multimedia Networking
+Day 15: Wireless Links and Network Characteristics (Section 6.1)
+Day 16: Wi-Fi and 4G/5G Networks (Section 6.2 - 6.3)
+Day 17: Mobile Networks and Mobility Management (Section 6.4)
+Day 18: Introduction to Multimedia Networking (Section 7.1)
+Day 19: Streaming Stored Audio/Video and Network Support (Section 7.2 - 7.3)
+Day 20: Study Review and Practice Problems for Chapters 6 and 7
+Day 21: Final Review of Key Concepts from Chapters 2, 3, 4, 5, 6, and 7
 
 ## 共学时间
 
-- 报名截止时间：(请写明时区)
-- 本期共学开始时间：(请写明时区)
+- 报名截止时间：北京时间2024-09-20 UTC-8
+- 本期共学开始时间：北京时间2024-09-20 
 - 本期共学持续时间：21 天（我们默认为 21 天，21 天为养成一个新习惯的周期，可根据自己的内容和课程来制定，但不易过长或过短）
 
 ## 共学规则
@@ -87,8 +112,8 @@
 
 <!-- START_COMMIT_TABLE -->
 
-| Name(GitHub ID) | 6.24 | 6.25 | 6.26 | 6.27 | 6.28 | 6.29 | 6.30 | 7.01 | 7.02 | 7.03 | 7.04 | 7.05 | 7.06 | 7.07 | 7.08 | 7.09 | 7.10 | 7.11 | 7.12 | 7.13 | 7.14 |
-| --------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Name(GitHub ID) | 9.20 | 9.21 | 9.22 | 9.23 | 9.24 | 9.25 | 9.26 | 9.27 | 9.28 | 9.29 | 9.30 | 10.01 | 10.02 | 10.03 | 10.04 | 10.05 | 10.06 | 10.07 | 10.08 | 10.09 | 10.10 |
+| --------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |                 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
 |                 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
 |                 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
