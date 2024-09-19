@@ -39,31 +39,49 @@
 
 书籍PDF在仓库可看到，本次学习前7章，因为这7章和软件开发联系比较紧密。
 
-Week 1: Chapter 4 - The Network Layer
+### Week 1: Chapter 4 - The Network Layer
 Day 1: Introduction and Forwarding (Section 4.1 - 4.2)
+
 Day 2: Network Layer Protocols, IPv4, and IPv6 (Section 4.3)
+
 Day 3: Routing Algorithms: Link-State and Distance Vector (Section 4.4.1 - 4.4.3)
+
 Day 4: Routing in the Internet: RIP, OSPF, BGP (Section 4.4.4 - 4.4.5)
+
 Day 5: Broadcast and Multicast Routing (Section 4.5)
+
 Day 6: Review Chapter 2 - Application Layer
+
 Day 7: Review Chapter 3 - Transport Layer
 
-Week 2: Chapter 5 - The Link Layer and Local Area Networks
+### Week 2: Chapter 5 - The Link Layer and Local Area Networks
 Day 8: Link Layer Services and Error Detection (Section 5.1 - 5.2)
+
 Day 9: Multiple Access Links and Protocols (Section 5.3)
+
 Day 10: LAN Technologies: Ethernet, Switching (Section 5.4)
+
 Day 11: Link Layer Addressing, ARP, and Switch Forwarding (Section 5.5)
+
 Day 12: Virtual LANs (VLANs) (Section 5.6)
+
 Day 13: Study Review and Practice Problems for Chapter 5
+
 Day 14: Extra Time for Revision/Notes Summary (Focus on Chapters 2, 3, and 5)
 
-Week 3: Chapter 6 - Wireless and Mobile Networks & Chapter 7 - Multimedia Networking
+### Week 3: Chapter 6 - Wireless and Mobile Networks & Chapter 7 - Multimedia Networking
 Day 15: Wireless Links and Network Characteristics (Section 6.1)
+
 Day 16: Wi-Fi and 4G/5G Networks (Section 6.2 - 6.3)
+
 Day 17: Mobile Networks and Mobility Management (Section 6.4)
+
 Day 18: Introduction to Multimedia Networking (Section 7.1)
+
 Day 19: Streaming Stored Audio/Video and Network Support (Section 7.2 - 7.3)
+
 Day 20: Study Review and Practice Problems for Chapters 6 and 7
+
 Day 21: Final Review of Key Concepts from Chapters 2, 3, 4, 5, 6, and 7
 
 ## 共学时间
