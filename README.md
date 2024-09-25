@@ -140,7 +140,11 @@
 | ----------- | ------------------------- | ------------------------------- |
 | START_DATE  | 2024-06-24T00:00:00+00:00 | Start time                      |
 | END_DATE    | 2024-07-06T23:59:59+00:00 | End time                        |
-| FIELD_NAME  | EICL1st· Name             | Field name in the readme        |
-| FILE_SUFFIX | _EICL1st.md_              | Shared learning activity number |
+| FIELD_NAME  | Name                      | Field name in the readme        |
+| FILE_SUFFIX | .md                       | Shared learning activity number |
 
 ![image](https://github.com/user-attachments/assets/d5b6f504-9eea-4215-9848-056fc33f00f8)
+
+Tips: 如果Workflow没有触发 可尝试开启Action中的Workflow
+![image](https://github.com/user-attachments/assets/24bdef9d-fdf5-4766-a710-e685512c7be4)
+
