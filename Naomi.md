@@ -467,8 +467,10 @@ TCP的传输速率是拥塞窗口的长度和当前RTT的比值。
 所以一条TCP连接的平均吞吐量=0.75*W/RTT
 
 <img width="3629" alt="Chapter3运输层" src="https://github.com/user-attachments/assets/9e083fca-fe95-43ab-b00a-225baf155be7">
-
+### 2024.09.24
+rest
 ### 2024.09.25
+rest
 ### 2024.09.26
 网络层能够被分解为两个相互作用的部分，即数据平面和控制平面。
 
