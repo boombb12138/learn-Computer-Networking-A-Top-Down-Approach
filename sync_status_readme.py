@@ -6,6 +6,82 @@ from datetime import datetime, timedelta
 import pytz
 import logging
 
+from github import Github
+
+# Get environment variables
+TOKEN = os.getenv("GITHUB_TOKEN")
+REPO_NAME = os.getenv("GITHUB_REPOSITORY")
+START_DATE = os.getenv("START_DATE")
+END_DATE = os.getenv("END_DATE")
+FILE_SUFFIX = os.getenv("FILE_SUFFIX")
+FIELD_NAME = os.getenv("FIELD_NAME")
+
+# Initialize Github and repository
+g = Github(TOKEN)
+repo = g.get_repo(REPO_NAME)
+
+# Date settings
+utc = pytz.UTC
+start_date = utc.localize(datetime.datetime.strptime(START_DATE, "%Y-%m-%d"))
+end_date = utc.localize(datetime.datetime.strptime(END_DATE, "%Y-%m-%d"))
+
+# Load commits within the date range
+commits = repo.get_commits(since=start_date, until=end_date)
+commit_dates = set()
+
+for commit in commits:
+    # Convert commit date to date-only format
+    commit_date = commit.commit.author.date.date()
+    commit_dates.add(commit_date)
+
+# Generate all dates within the range
+current_date = start_date.date()
+all_dates = []
+while current_date <= end_date.date():
+    all_dates.append(current_date)
+    current_date += datetime.timedelta(days=1)
+
+# Initialize the README content with the missed dates
+commit_status = []
+
+# Track missed dates
+missed_dates = []
+
+for date in all_dates:
+    if date in commit_dates:
+        # If the commit exists, record a 'Yes'
+        commit_status.append(f"| {date} | Yes |")
+        
+        # If there are missed dates, append them before the current commit date
+        if missed_dates:
+            for missed_date in missed_dates:
+                commit_status.append(f"| {missed_date} | No |")
+            missed_dates = []  # Reset missed dates after filling in
+    else:
+        # If no commit on the date, just add it to missed_dates
+        missed_dates.append(date)
+
+# If any missed dates remain at the end of the loop, append them
+for missed_date in missed_dates:
+    commit_status.append(f"| {missed_date} | No |")
+
+# Update the README with the updated commit table
+readme_content = repo.get_contents("README.md")
+readme_text = readme_content.decoded_content.decode("utf-8")
+
+# Find the existing status table
+table_start = readme_text.find(f"| {FIELD_NAME} | Status |")
+table_end = readme_text.find("\n", table_start)
+updated_table = f"| {FIELD_NAME} | Status |\n| --- | --- |\n" + "\n".join(commit_status)
+
+# Replace the old table with the new one
+new_readme_text = readme_text[:table_start] + updated_table + readme_text[table_end:]
+
+# Push the changes to GitHub
+if new_readme_text != readme_text:
+    repo.update_file(readme_content.path, "Update commit status table", new_readme_text, readme_content.sha)
+
+
 # Constants
 START_DATE = datetime.fromisoformat(os.environ.get(
     'START_DATE', '2024-06-24T00:00:00+00:00')).replace(tzinfo=pytz.UTC)
