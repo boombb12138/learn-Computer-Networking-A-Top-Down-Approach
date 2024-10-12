@@ -205,7 +205,7 @@ TCP连接也总是点对点(point-to-point)的，即在单个发送方与单个�
 客户进程发送数据-》数据经过套接字-》数据开始有TCP控制-》TCP将数据放到发送缓存中-》TCP不时地将数据从缓存中取出并传递到网络层-》网络层将数据封装到IP数据报并发送到网络
 
 在接收端的TCP收到报文-》存入接收缓存-》应用程序从缓存中读取数据
-
+ 
 ### 3.5.2TCP报文段结构
 
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6ca9822-e902-41f9-90d9-747f9ae75db0/0f8ed61e-97eb-43e4-9c52-db8566093739/image.png)
